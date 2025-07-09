@@ -1,15 +1,26 @@
 # 💬 Oracle's QnA
 
 📘 **이 저장소는 Oracle DB를 기반으로 한 SQL 문제 제작을 정리한 공간입니다.**  
-SQL의 SELECT 문법을 활용하여 다양한 , JOIN, SUBQUERY 실습하며 데이터 조회와 처리에 대한 이해를 높였습니다.
+SQL의 SELECT 문법을 활용하여 다양하게 실습하며 데이터 조회와 처리에 대한 이해를 높였습니다.
 
 ---
 
 ## ✅ 프로젝트 개요
 
-- **주제**: Oracle DB 기반 SQL 실습
+- **주제**: Oracle DB 기반 SQL 문제 제작작
 - **목표**: 실제 데이터베이스 환경에서의 질의 작성 및 결과 분석 능력 향상
 - **도구**: Oracle SQL Developer, Oracle DB
+
+---
+
+## 👥 참여자
+
+| 이름       | GitHub                           | 
+|------------|----------------------------------|
+| 강한솔     | [@kkangsol](https://github.com/kkangsol) | 
+| 이노운     | [@GodNowoon](https://github.com/GodNowoon) | 
+| 전수민     | [@Jsumin07](https://github.com/Jsumin07) |
+| 정다빈     | [@ddddabi](https://github.com/ddddabi) |
 
 ---
 
@@ -38,7 +49,7 @@ SQL의 SELECT 문법을 활용하여 다양한 , JOIN, SUBQUERY 실습하며 데
 SELECT ename, job, TO_CHAR(hiredate,'YYYY/MM/DD'),sal
 FROM emp
 WHERE TO_CHAR(hiredate,'YYYY') LIKE '1981'AND job='SALESMAN'
-ORDER BY sal DESC;
+ORDER BY sal ASC;
 ```
 <p><strong>📸 결과:</strong></p>
 
