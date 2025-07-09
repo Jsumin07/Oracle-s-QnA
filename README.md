@@ -28,7 +28,7 @@ SQL 문법을 활용한 다양한 SELECT, JOIN, SUBQUERY, GR실습하며 데이�
 ## 📂 파일 구조
 - Oracle_Q.sql : Oracle기반으로 제작된 문제파일
 - Oracle_QnA.sql : Oracle_Q의 해답파일
-- -README.md
+- README.md
 
 ## 📚 실습 문제 & 풀이
 
