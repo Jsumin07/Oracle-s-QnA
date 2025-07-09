@@ -32,7 +32,7 @@ SQL 문법을 활용한 다양한 SELECT, JOIN, SUBQUERY, GR실습하며 데이�
 
 ## 📚 실습 문제 & 풀이
 
-### 1️⃣ 1981년에 입사한 세일즈맨들의 이름, 부서번호, 입사일, 급여를 **급여 내림차순**으로 출력하시오.
+### 1️⃣ 1981년에 입사한 SALESMAN의 이름(ename), 부서번호(job), 입사일(hiredate), 급여(sal)를 **급여 내림차순**으로 출력하시오.
 
 ```sql
 SELECT ename, job, TO_CHAR(hiredate,'YYYY/MM/DD'),sal
@@ -45,7 +45,7 @@ ORDER BY sal asc;
 ![Q1](https://github.com/user-attachments/assets/1bfc6382-bf54-4b00-b958-6011278c3fd8)
 
 
-### 2️⃣ 입사 월이 12월인 직원들의 이름, 사원번호, 입사일을 출력하시오.
+### 2️⃣ 12월에 입사한 직원들의 이름(ename), 사원번호(deptno), 입사일(hiredate)을 출력하시오.
 ```sql
 SELECT ename, deptno, TO_CHAR(hiredate,'YYYY/MM/DD')
 FROM emp
@@ -55,7 +55,7 @@ WHERE TO_CHAR(hiredate,'YYYY/MM/DD') LIKE '%%%%/12/%%';
 
 ![Q2](https://github.com/user-attachments/assets/5e5ac9ab-0507-42d8-9c14-2aa4ecd1fab2)
 
-### 3️⃣ COMM이 NULL 또는 0인 사람 중 월급이 가장 적은 직원을 출력하시오.
+### 3️⃣ COMM이 NULL 또는 0인 사람(ename) 중 월급(sal)이 가장 적은 직원을 출력하시오.
 ```sql
 SELECT ename, sal,comm
 FROM emp
@@ -66,9 +66,9 @@ WHERE (comm IS NOT NULL OR comm=0) AND sal=1500;
 ![Q3](https://github.com/user-attachments/assets/e578c886-c726-4b07-b787-225e3d474062)
 
 
-### 4️⃣ 부서번호가 20번이면서 전체 평균 급여보다 급여가 높은 직원의 이름, 부서, 월급을 출력하시오.
+### 4️⃣ 부서번호가 20번이면서 전체 평균 급여보다 급여가 높은 직원의 이름(ename), 부서(deptno), 월급(sal)을 출력하시오.
 ```sql
-SELECT ename, deptno,sal
+SELECT ename, deptno, sal
 FROM emp
 WHERE deptno=20 AND sal > (SELECT avg(sal)FROM emp);
 ```
