@@ -1,7 +1,7 @@
 # 💬 Oracle's QnA
 
 📘 **이 저장소는 Oracle DB를 기반으로 한 SQL 문제 제작을 정리한 공간입니다.**  
-SQL 문법을 활용한 다양한 SELECT, JOIN, SUBQUERY 실습하며 데이터 조회와 처리에 대한 이해를 높였습니다.
+SQL의 SELECT 문법을 활용하여 다양한 , JOIN, SUBQUERY 실습하며 데이터 조회와 처리에 대한 이해를 높였습니다.
 
 ---
 
