@@ -1,7 +1,7 @@
 # 💬 Oracle's QnA
 
 📘 **이 저장소는 Oracle DB를 기반으로 한 SQL 문제 제작을 정리한 공간입니다.**  
-SQL 문법을 활용한 다양한 SELECT, JOIN, SUBQUERY, GR실습하며 데이터 조회와 처리에 대한 이해를 높였습니다.
+SQL 문법을 활용한 다양한 SELECT, JOIN, SUBQUERY 실습하며 데이터 조회와 처리에 대한 이해를 높였습니다.
 
 ---
 
@@ -38,7 +38,7 @@ SQL 문법을 활용한 다양한 SELECT, JOIN, SUBQUERY, GR실습하며 데이�
 SELECT ename, job, TO_CHAR(hiredate,'YYYY/MM/DD'),sal
 FROM emp
 WHERE TO_CHAR(hiredate,'YYYY') LIKE '1981'AND job='SALESMAN'
-ORDER BY sal asc;
+ORDER BY sal DESC;
 ```
 <p><strong>📸 결과:</strong></p>
 
